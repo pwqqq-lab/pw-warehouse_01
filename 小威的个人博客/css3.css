@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: "微软雅黑";
+}
+
+
+
+/* 头部图片 */
+#head_imgs {
+    position: fixed;
+    width: 100%;
+    height: 20rem;
+    background-image: url(./imgs/bgimg_head.jpg);
+}
+
+
+/* 导航栏 */
+#Navigation_Bar {
+    width: 100%;
+    height: 4rem;
+    background-color: yellow;
+    /* 固定定位 */
+    position: fixed;
+    margin-top: 20rem;
+
+
+}
+
+#Typesetting {
+    width: 100%;
+    font-size: 2rem;
+    /* 弹性布局 */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+#Typesetting li {
+    list-style: none;
+    line-height: 4rem;
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+#Typesetting li a {
+    text-decoration: none;
+    color: blue;
+}
+
+#Typesetting li a:hover {
+    color: red;
+}
+
+#Typesetting li:hover
+{
+    background-color: aqua;
+}
+#null {
+    width: 100%;
+    height: 24rem;
+}
+
+
+
+
+#box2_fater
+{
+    width: 100%;
+    height: 50rem;
+    background-image: url(./imgs/Xxbg.jpg);
+    background-repeat: repeat-x;
+    background-size: 52%;
+}
+
+
+#box2
+{
+    width: auto;
+    height: 50rem;
+    /* margin-left: 3rem; */
+    margin: 0 45%; 
+   
+}
+#box2 ol
+{
+    list-style: none;
+}
+#box2 ol span
+{
+    color: rgb(0, 0, 0);
+    
+    /* animation:mycolor linear infinite 0.5s; */
+font-size: 3rem;
+font-weight: bold;
+margin-left: -2rem;
+}
+#box2 ol li
+ { /*color: rgb(216, 54, 205); */
+    animation:mycolor2 linear infinite 0.5s;
+    font-size: 1.5rem;
+}
+
+
+@keyframes mycolor {
+    0%{color: aqua;}
+    20%{color: darkmagenta;}
+    50%{color: blue;}
+    80%{color: rgb(108, 104, 217);}
+    100%{color: chartreuse;}
+}
+@keyframes mycolor2 {
+    0%{color: red;}
+    20%{color: rgb(213, 170, 16);}
+    40%{color: rgb(251, 239, 25);}
+    50%{color: rgb(17, 252, 13);}
+    60%{color: rgb(153, 223, 84);}
+    80%{color: rgb(0, 46, 248);}
+    100%{color: rgb(231, 13, 191);}
+
+}

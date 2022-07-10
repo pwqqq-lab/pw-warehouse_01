@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: "微软雅黑";
+}
+
+
+
+/* 头部图片 */
+#head_imgs {
+    position: fixed;
+    width: 100%;
+    height: 20rem;
+    background-image: url(./imgs/bgimg_head.jpg);
+}
+
+
+/* 导航栏 */
+#Navigation_Bar {
+    width: 100%;
+    height: 4rem;
+    background-color: yellow;
+    /* 固定定位 */
+    position: fixed;
+    margin-top: 20rem;
+
+
+}
+
+#Typesetting {
+    width: 100%;
+    font-size: 2rem;
+    /* 弹性布局 */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+#Typesetting li {
+    list-style: none;
+    line-height: 4rem;
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+#Typesetting li a {
+    text-decoration: none;
+    color: blue;
+}
+
+#Typesetting li a:hover {
+    color: red;
+}
+
+#Typesetting li:hover
+{
+    background-color: aqua;
+}
+#null {
+    width: 100%;
+    height: 24rem;
+}

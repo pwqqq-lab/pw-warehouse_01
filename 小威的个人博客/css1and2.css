@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+
+/* 头部图片 */
+#head_imgs {
+    /* 固定定位 */
+    position: fixed;
+    width: 100%;
+    height: 20rem;
+    background-image: url(./imgs/bgimg_head.jpg);
+}
+
+
+/* 导航栏 */
+#Navigation_Bar {
+    width: 100%;
+    height: 4rem;
+    background-color: yellow;
+    /* 固定定位 */
+    position: fixed;
+    margin-top: 20rem;
+
+
+}
+
+ul {
+    width: 100%;
+    font-size: 2rem;
+    /* 弹性布局 */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+li {
+    list-style: none;
+    line-height: 4rem;
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+li:hover
+{
+    background-color: aqua;
+}
+
+/* 主页背景图片 */
+#Homepage {
+    width: 100%;
+    height: 77rem;
+    background-image: url(./imgs/bgimgmain.jpg);
+}
+/* 主页文字 */
+
+#Homepage h1 {
+    text-align: center;
+    padding-top: 30%;
+    font-size: 5rem;
+    color: whitesmoke;
+}
+
+#Homepage h1 span {
+    color: blue;
+}
+
+/* 相册填充盒子，删除后相册的图片会藏在导航栏下面 */
+#null {
+    width: 100%;
+    height: 24rem;
+}
+
+/* 装图片的盒子 */
+#Xc_box {
+
+    width: 100%;
+    height: 200rem;
+    background-image: url(./imgs/Xc_left.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /* display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-around; */
+
+
+}
+
+#Xc_box div {
+    margin-top: 3rem;
+    border-radius: 2rem;
+    width: 47.7rem;
+    height: 47.7rem;
+    float: left;
+    margin-left: 2.5rem;
+    box-shadow: 0 0.3rem 1rem 0.1rem rgb(209, 12, 170);
+
+}
+#Xc_box div img {
+    width: 47.7rem;
+    height: 47.7rem;
+   
+    border-radius: 2rem;
+
+} 
+/*
+ #Xc_box div img {
+    width: 47.7rem;
+    height: 47.7rem;
+   // 鼠标移出缓慢变小 
+    object-fit: cover;
+    transition: all 2s;
+
+    border-radius: 2rem;
+
+} 
+//鼠标移入图片放大
+#Xc_box div img:hover {
+    transition-delay: 0.5s;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transform: scale(1.5);
+}
+*/

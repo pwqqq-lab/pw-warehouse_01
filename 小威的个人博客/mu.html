@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio autoplay="autoplay"  loop="loop" preload="auto" src="./yy/XXXTENTACION.mp3" id="test"> </audio>
+    <script type="text/javascript">
+
+        function toggleSound() {
+            var music = document.getElementById("test");//获取ID  
+                console.log(music);
+                console.log(music.paused);
+            if (music.paused) { //判读是否播放  
+                music.paused=false;
+                music.play(); //没有就播放 
+            	}         
+        }
+
+setInterval("toggleSound()",1);
+
+    </script>
+</body>
+</html>
